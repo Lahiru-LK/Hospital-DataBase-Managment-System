@@ -1,0 +1,42 @@
+CREATE TABLE Staff(
+Staff_ID VARCHAR(5),
+Name CHAR(30),
+Salary DECIMAL(6,2),
+Department_ID VARCHAR(4),
+PRIMARY KEY(Staff_ID),
+FOREIGN KEY(Department_ID) REFERENCES Department(Department_ID)
+);
+
+CREATE TABLE Medicine(
+Medicine_ID VARCHAR(5),
+Name VARCHAR(30),
+Quantity INT(5),
+Pharmacy_ID VARCHAR(5),
+PRIMARY KEY(Medicine_ID),
+FOREIGN KEY(Pharmacy_ID) REFERENCES Pharmacy(Pharmacy_ID));
+
+CREATE TABLE Gives(
+Patient_ID VARCHAR(6),
+Medicine_ID VARCHAR(5),
+G_Date DATE,
+G_Time TIME,
+PRIMARY KEY(Patient_ID,Medicine_ID),
+FOREIGN KEY(Patient_ID) REFERENCES Patient(Patient_ID),
+FOREIGN KEY(Medicine_ID) REFERENCES Medicine(Medicine_ID));
+
+
+CREATE TABLE Doctor_treat(
+Doctor_ID VARCHAR(5),
+Patient__ID VARCHAR(6),
+Treatment_Name VARCHAR(30),
+D_Date DATE,
+D_Time TIME,
+Test_Result VARCHAR(20),
+PRIMARY KEY(Doctor_ID,Patient__ID),
+FOREIGN KEY(Doctor_ID) REFERENCES Doctor(Doctor_ID),
+FOREIGN KEY(Patient_ID) REFERENCES Patient(Patient_ID));
+
+
+
+
+

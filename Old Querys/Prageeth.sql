@@ -1,0 +1,52 @@
+CREATE TABLE Laboratory (
+Laboratory_ID VARCHAR(4) PRIMARY KEY,
+Name VARCHAR(20));
+
+INSERT INTO Laboratory (Laboratory_ID, Name) VALUES
+("LB01", "LAB 01"),
+("LB02", "LAB 02"),
+("LB03", "LAB 03"),
+("LB04", "LAB 04"),
+("LB05", "LAB 05"),
+("LB06", "LAB 06"),
+("LB07", "LAB 07"),
+("LB08", "LAB 08"),
+("LB09", "LAB 09"),
+("LB10", "LAB 10");
+
+CREATE TABLE Department (
+Department_ID VARCHAR(4) PRIMARY KEY,
+Name CHAR(30));
+
+
+INSERT INTO Department (Department_ID, Name) VALUES
+("DP01", "Dental"),
+("DP02", "OPD"),
+("DP03", "IPD"),
+("DP04", "Operation Theatre Complex"),
+("DP05", "X-ray"),
+("DP06", "MRD"),
+("DP07", "Medical Department"),
+("DP08", "Nursing Department"),
+("DP09", "Paramedical Department"),
+("DP10", "Personnel Department");
+
+CREATE TABLE Record (
+Record_ID VARCHAR(6) PRIMARY KEY, 
+Patient_ID VARCHAR(6),
+Weight VARCHAR(6),
+Blood-Group VARCHAR(4),
+FOREIGN KEY (Patient_ID) REFERENCES Patient(Patient_ID));
+
+INSERT INTO Record (Record_ID, Patient_ID, Weight, Blood_Group) VALUES
+("RC0001", "PT0001", "65", "A+"),
+("RC0002", "PT0002", "70", "B+"),
+("RC0003", "PT0003", "55", "O+"),
+("RC0004", "PT0004", "60", "AB+"),
+("RC0005", "PT0005", "63", "AB-"),
+("RC0006", "PT0006", "59", "O-"),
+("RC0007", "PT0007", "68", "A-"),
+("RC0008", "PT0008", "72", "B-"),
+("RC0009", "PT0009", "77", "A+"),
+("RC0010", "PT0010", "51", "AB+");
+

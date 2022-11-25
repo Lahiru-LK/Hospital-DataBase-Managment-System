@@ -1,0 +1,14 @@
+INSERT INTO Doctor_treat(Doctor_ID, Patient_ID, Treatment_Name, Date, Time, Test_Result) VALUES
+   ('DC001','PT0001','Bypass surgery','2022/05/01','02:15 pm','Normal'),   ('DC004','PT0002','Endoscopy test','2022/05/02','02:15 pm','Continue treatments'),
+  ('DC001','PT0003','Bone marrow transplant','2022/05/10','10:00 pm','Normal'), 
+  ('DC007','PT0004','Cataract removal surgery','2022/06/10','03:00 pm','Normal'),
+  ('DC005','PT0005','Neuro therapy','2022/06/20','02:00 pm','Continue treatments'),
+  ('DC007','PT0006','Eye transplant','2022/06/20','03:15 pm','Normal'),  ('DC008','PT0007','Cancer treatments & surgery','2022/06/24','11.00 am','Continue treatments'),
+  ('DC001','PT0008','Cardiovascular test','2022/07/01','09.00 am','Normal'),
+  ('DC002','PT0009','Delevery','2022/06/24','09.15 pm','Normal'),  ('DC010','PT0010','Allergy Treatments','2022/06/24','08.30 pm','Normal'),
+  ('DC002','PT0011','Medical instructions','2022/05/04','10:00 am','Normal'),
+  ('DC002','PT0012','Medical instructions','2022/05/05','10:30 am','Normal'),
+  ('DC002','PT0013','Medical instructions','2022/05/06','09.15 am','Normal'),
+  ('DC002','PT0014','Stitching','2022/06/01','09:00 am','Normal'),  ('DC002','PT0015','Blood test','2022/06/05','09:00 am','Admitted'),  ('DC003','PT0016','Tooth filling','2022/06/05','11:00 am','Normal'),  ('DC007','PT0017','Eye checkup','2022/07/05','09:30 am','Normal'),  ('DC002','PT0018','Medical instructions','2022/07/10','09:00 am','Normal'),
+  ('DC002','PT0019','Medical instructions','2022/07/11','10:30 am','Normal'),
+  ('DC003','PT0020','Cavity checkup','2022/07/20','09:45 am','Normal');

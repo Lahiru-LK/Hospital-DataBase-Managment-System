@@ -1,0 +1,10 @@
+CREATE TABLE Family(
+      Staff_ID VARCHAR(5)UNIQUE NOT NULL PRIMARY KEY,
+      Name CHAR(30),
+      Address VARCHAR(50),
+);
+
+CREATE TABLE Outpatient(
+      Record_ID VARCHAR(5)UNIQUE NOT NULL PRIMARY KEY,
+      Date DATE
+);
